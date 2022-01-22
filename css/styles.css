@@ -1,9 +1,10 @@
 :root {
     --color-shell: #49391e50;
-    --test-red: rgba(255, 0, 0, 0.2);
+    --test-red: rgba(255, 0, 0, 0.5);
     --test-orange: rgba(255, 166, 0, 0.5);
     --test-yellow: rgba(255, 255, 0, 0.5);
     --test-green: rgba(0, 128, 0, 0.5);
+    --test-blue: rgba(0, 0, 255, 0.5);
 }
 
 body {
@@ -58,7 +59,7 @@ body {
     height: 29.5em;
     width: 2.7em;
     /* background-color: var(--test-red); */
-    background-color: var(--color-shell);
+    /* background-color: var(--color-shell); */
 }
 
 ._11, ._61 {
@@ -190,9 +191,111 @@ body {
 
 .dpad {
     position: absolute;
-    background-color: rgba(255, 0, 0, 0.493);
+    background-color: var(--test-red);
     height: 6.5em;
     margin: 8em 0 0 3em;
     width: 6.5em;
     z-index: 30;
+    border-radius: 50%;
+}
+
+.screen {
+    position: absolute;
+    background-color: var(--test-blue);
+    height: 13.2em;
+    margin: 3.8em 0 0 19em;
+    width: 17.8em;
+    z-index: 30;
+    border-radius: 5%;
+}
+
+.screen-frame {
+    position: absolute;
+    background-color: var(--test-green);
+    height: 15.3em;
+    margin: 2.6em 0 0 17.8em;
+    width: 20.2em;
+    z-index: 30;
+    border-radius: 10% 10% 5% 5%;
+}
+
+.speaker {
+    position: absolute;
+    background-color: var(--test-red);
+    height: 4.4em;
+    margin: 20.2em 0 0 6.3em;
+    width: 5.2em;
+    z-index: 30;
+}
+
+.logo-dots {
+    position: absolute;
+    background-color: var(--test-red);
+    height: 1.8em;
+    margin: 2.7em 0 0 12.5em;
+    width: 4.2em;
+    z-index: 30;
+}
+
+.logo {
+    position: absolute;
+    background-color: var(--test-red);
+    height: 2.6em;
+    margin: 4.6em 0 0 12.3em;
+    width: 4.4em;
+    z-index: 30;
+}
+
+.power {
+    position: absolute;
+    background-color: var(--test-red);
+    height: 1.2em;
+    margin: 7.7em 0 0 14.6em;
+    width: 1.1em;
+    z-index: 30;
+}
+
+.sega {
+    position: absolute;
+    background-color: var(--test-blue);
+    height: 1.6em;
+    margin: 3.6em 0 0 39.4em;
+    width: 5.1em;
+    z-index: 30;
+}
+
+.button1, .button2 {
+    position: absolute;
+    background-color: var(--test-blue);
+    height: 3.6em;
+    margin: 11.4em 0 0 45.1em;
+    width: 3.5em;
+    z-index: 30;
+    border-radius: 50%;
+}
+
+.button2 {
+    margin: 8.3em 0 0 49.3em;
+}
+
+.start {
+    position: absolute;
+    background-color: var(--test-blue);
+    height: 3.4em;
+    margin: 4.2em 0 0 46.7em;
+    width: 1.8em;
+    border-bottom-right-radius: 7.2em;
+    border-top-right-radius: 7.2em;
+    z-index: 30;
+    transform: rotate(20deg);
+}
+
+.start-dot {
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.5);
+    height: 0.7em;
+    margin: 5.3em 0 0 47em;
+    width: 0.7em;
+    z-index: 30;
+    border-radius: 50%;
 }
