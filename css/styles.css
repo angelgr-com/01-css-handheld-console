@@ -1,3 +1,11 @@
+:root {
+    --color-shell: #49391e50;
+    --test-red: rgba(255, 0, 0, 0.2);
+    --test-orange: rgba(255, 166, 0, 0.5);
+    --test-yellow: rgba(255, 255, 0, 0.5);
+    --test-green: rgba(0, 128, 0, 0.5);
+}
+
 body {
     background-image: url("../media/Gamegear_outline.svg");
     /*
@@ -27,8 +35,8 @@ body {
     flex-direction: column;
 }
 
-#gamegear {
-    position: absolute;
+.gamegear {
+    position: relative;
     margin-top: 1em;
     margin-left: 2.3em;
     margin-right: 1em;
@@ -40,126 +48,139 @@ body {
    Shell
 *********************************/
 
-#shell {
-    position: relative;
+.shell {
+    position: absolute;
     height: 29.5em;
     width: 56em;
 }
 
-#_1, #_6 {
+._1, ._6 {
     height: 29.5em;
     width: 2.7em;
-    background-color: rgba(255, 0, 0, 0.2);
+    /* background-color: var(--test-red); */
+    /* background-color: var(--color-shell); */
 }
 
-#_11, #_61 {
+._11, ._61 {
     height: 1.9em;
     width: 0em;
 }
 
-#_12, #_62 {
+._12, ._62 {
     height: 11.6em;
     width: 2.2em;
-    background: rgba(255, 166, 0, 0.5);
+    /* background: var(--test-orange); */
+    background-color: var(--color-shell);
     border-radius: 100% 0 0 0;
 }
 
-#_13, #_63 {
-    height: 10em;
-    width: 2.4em;
-    background-color: rgba(255, 255, 0, 0.5);
+._13, ._63 {
+    height: 10.3em;
+    width: 2.6em;
+    /* background-color: var(--test-yellow); */
+    background-color: var(--color-shell);
     border-radius: 12% 0 0 5%;
-    transform: rotate(1deg);
+    /* transform: rotate(0.75deg); */
 }
 
-#_14, #_64 {
+._14, ._64 {
     height: 6em;
     width: 2.7em;
 }
 
-#_141, #_641 {
+._141, ._641 {
     height: 4.5em;
     width: 2.7em;
-    background-color: rgba(0, 128, 0, 0.5);
+    /* background-color: var(--test-green); */
+    background-color: var(--color-shell);
     border-radius: 0 0 0 100%;
 }
 
-#_142, #_642 {
+._142, ._642 {
     height: 1.5em;
     width: 0;
 }
 
-#_2, #_5 {
+._2, ._5 {
     height: 29.5em;
     width: 7.8em;
-    background-color: rgba(255, 0, 0, 0.2);   
+    /* background-color: var(--test-red); */
+    /* background-color: var(--color-shell); */
 }
 
-#_21, #_51 {
+._21, ._51 {
     height: 1.8em;
     width: 7.8em;
 }
 
-#_211, #_511 {
+._211, ._511 {
     height: 0.8em;
     width: 7.8em;
 }
 
-#_212 {
+._212 {
     height: 1.6em;
     width: 7.8em;
-    background-color: rgba(0, 128, 0, 0.5);
+    /* background-color: var(--test-green); */
+    background-color: var(--color-shell);
     border-radius: 100% 0 0 0;
 }
 
-#_22, #_52 {
+._22, ._52 {
     height: 26.3em;
     width: 7.8em;
-    background-color: rgba(255, 166, 0, 0.5);
+    /* background-color: var(--test-orange); */
+    background-color: var(--color-shell);
 }
 
-#_23, #_53 {
+._23, ._53 {
     height: 1.0em;
     width: 7.8em;
-    background-color: rgba(255, 255, 0, 0.5);
+    /* background-color: var(--test-yellow); */
+    background-color: var(--color-shell);
     border-radius: 0 0 0 100%;
 }
 
-#_3, #_4 {
+._3, ._4 {
     height: 29.5em;
     width: 17.5em;
-    background-color: rgba(255, 0, 0, 0.2);
+    /* background-color: var(--test-red); */
+    /* background-color: var(--color-shell); */
 }
 
-#_31, #_41 {
+._31, ._41 {
     height: 1.8em;
     width: 17.5em;
-    background-color: rgba(255, 255, 0, 0.5);
+    /* background-color: var(--test-yellow); */
+    background-color: var(--color-shell);
     border-radius: 50% 0 0 0;
 }
 
-#_32, #_42 {
+._32, ._42 {
     height: 27em;
     width: 17.5em;
-    background-color: rgba(255, 166, 0, 0.5);
+    /* background-color: var(--test-orange); */
+    background-color: var(--color-shell);
 }
 
-#_33, #_43 {
+._33, ._43 {
     height: 0.7em;
     width: 17.5em;
-    background-color: rgba(0, 128, 0, 0.5);
+    /* background-color: var(--test-green); */
+    background-color: var(--color-shell);
     border-radius: 0 0 0 50%;
 }
 
-#_41, #_43, #_51, #_53, 
-#_61, #_62, #_63, #_64 {
+._41, ._43, ._51, ._53, 
+._61, ._62, ._63, ._64 {
     transform: scaleX(-1); 
 }
 
-#_512 {
-    height: 1.6em;
+._512 {
+    height: 1em;
     width: 7.8em;
-    background-color: rgba(0, 128, 0, 0.5);
+    /* background-color: var(--test-green); */
+    background-color: var(--color-shell);
     border-radius: 80% 0 0 0;
 }
 
@@ -167,3 +188,11 @@ body {
    Directional pad
 *********************************/
 
+.dpad {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.493);
+    height: 6.5em;
+    margin: 8em 0 0 3em;
+    width: 6.5em;
+    z-index: 30;
+}
