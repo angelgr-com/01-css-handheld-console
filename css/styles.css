@@ -6,6 +6,8 @@ body {
     */
     background-repeat: no-repeat;
     background-size: 60em 31em;
+    margin: 0;
+    padding: 0;
 }
 
 .flex {
@@ -26,14 +28,20 @@ body {
 }
 
 #gamegear {
+    position: absolute;
     margin-top: 1em;
-    margin-left: 1.8em;
+    margin-left: 2.3em;
     margin-right: 1em;
     height: 29.5em;
     width: 56em;
 }
 
+/*********************************
+   Shell
+*********************************/
+
 #shell {
+    position: relative;
     height: 29.5em;
     width: 56em;
 }
@@ -154,3 +162,8 @@ body {
     background-color: rgba(0, 128, 0, 0.5);
     border-radius: 80% 0 0 0;
 }
+
+/*********************************
+   Directional pad
+*********************************/
+
