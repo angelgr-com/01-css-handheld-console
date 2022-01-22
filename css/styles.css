@@ -1,41 +1,59 @@
 body {
     background-image: url("../media/Gamegear_outline.svg");
+    /*
+    https://segaretro.org/images/2/20/Gamegear_outline.svg
+    segaretro.org | GameGear outline | CC BY 4.0
+    */
     background-repeat: no-repeat;
     background-size: 60em 31em;
-} 
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-end {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
 
 #gamegear {
     margin-top: 1em;
     margin-left: 1.8em;
     margin-right: 1em;
     height: 29.5em;
-    width: 31em;
+    width: 56em;
+}
+
+#shell {
+    height: 29.5em;
+    width: 56em;
 }
 
 #_1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    height: 28em;
+    height: 29.5em;
     width: 2.7em;
+    background-color: rgba(255, 0, 0, 0.2);
 }
 
 #_11 {
-    height: 1.8em;
+    height: 1.9em;
     width: 0em;
-    background-color: rgba(255, 0, 0, 0.5);
 }
 
 #_12 {
-    height: 10.2em;
-    width: 2em;
+    height: 11.6em;
+    width: 2.2em;
     background: rgba(255, 166, 0, 0.5);
     border-radius: 100% 0 0 0;
-    /* transform: skewx(-1deg); */
-    transform: translateX(50em);
-    transform: rotate(1.5deg);
 }
 
 #_13 {
@@ -49,20 +67,52 @@ body {
 #_14 {
     height: 6em;
     width: 2.7em;
-    background-color: rgba(0, 113, 128, 0.5);
-    border-radius: 0 0 0 100%;
 }
 
-#_15 {
-    height: 6em;
+#_141 {
+    height: 4.5em;
     width: 2.7em;
     background-color: rgba(0, 128, 0, 0.5);
     border-radius: 0 0 0 100%;
 }
 
-#_16 {
+#_142 {
     height: 1.5em;
-    width: 2.7em;
-    /* background-color: green; */
-    /* border-radius: 0 0 0 100%; */
+    width: 0;
+}
+
+#_2 {
+    height: 29.5em;
+    width: 7.8em;
+    background-color: rgba(255, 0, 0, 0.2);   
+}
+
+#_21 {
+    height: 1.8em;
+    width: 7.8em;
+}
+
+#_211 {
+    height: 0.9em;
+    width: 7.8em;
+}
+
+#_212 {
+    height: 1.5em;
+    width: 7.8em;
+    background-color: rgba(0, 128, 0, 0.5);
+    border-radius: 100% 0 0 0;
+}
+
+#_22 {
+    height: 26.3em;
+    width: 7.8em;
+    background-color: rgba(255, 166, 0, 0.5);
+}
+
+#_23 {
+    height: 1.1em;
+    width: 7.8em;
+    background-color: rgba(255, 255, 0, 0.5);
+    border-radius: 0 0 0 100%;
 }
