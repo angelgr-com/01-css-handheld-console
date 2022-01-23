@@ -13,23 +13,29 @@
     --orange: rgba(255, 166, 0, 0.5);
     --yellow: rgba(255, 255, 0, 0.5);
     --green: rgba(0, 128, 0, 0.5);
-    --blue: rgba(0, 0, 255, 0.5);
+    --blue: rgba(13, 50, 144, 0.5);
     --black: rgba(0, 0, 0, 0.8);
     --gray: rgba(0, 0, 0, 0.5);
+    --gray-back1: #94a2ab;
+    --gray-back2: #7f7a81;
 
 }
 
 body {
-    /* background-image: url("../media/Gamegear_outline.svg"); */
-    /*
+    /* background-image: url("../media/Gamegear_outline.svg");
     https://segaretro.org/images/2/20/Gamegear_outline.svg
     segaretro.org | GameGear outline | CC BY 4.0
-    */
-    background-repeat: no-repeat;
     background-size: 60em 31em;
-
+    */
     margin: 0;
     padding: 0;
+
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image:
+        linear-gradient(var(--gray-back2) 0.2em, transparent 0.2em), 
+        linear-gradient(to right, var(--gray-back2) 0.2em, var(--gray-back1) 0.2em);
+    background-size: 2.5em 2.5em;
 }
 
 .border {
@@ -305,7 +311,7 @@ body {
     position: absolute;
     /* background-color: var(--yellow); */
     height: 1.9em;
-    width: 0.9em;
+    width: 0.8em;
     margin: 2.7em 0 0 12.5em;
     z-index: 30;
     transform: rotate(43deg);
