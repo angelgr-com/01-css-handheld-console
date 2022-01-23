@@ -300,11 +300,187 @@ body {
 
 .speaker {
     position: absolute;
-    background-color: var(--red);
-    height: 4.4em;
-    margin: 20.2em 0 0 6.3em;
-    width: 5.2em;
+    height: 6em;
+    margin: 20.2em 0 0 5em;
+    width: 8em;
     z-index: 30;
+
+    display: grid;
+    grid-template-columns: repeat(8, 0.8em);
+    grid-template-rows: repeat(5, 0.8em);
+    grid-column-gap: 0.2em;
+    grid-row-gap: 0.2em;
+    align-items: center;
+    justify-items: center;
+}
+
+.__01 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.__02 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; 
+}
+.__03 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2; 
+}
+.__04 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2; 
+}
+.__05 {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2; 
+}
+.__06 {
+    grid-column: 6 / 7;
+    grid-row: 1 / 2; 
+}
+.__07 {
+    grid-column: 7 / 8;
+    grid-row: 1 / 2; 
+}
+.__08 {
+    grid-column: 8 / 9;
+    grid-row: 1 / 2; 
+}
+.__09 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.__10 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; 
+}
+.__11 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3; 
+}
+.__12 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3; 
+}
+.__13 {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3; 
+}
+.__14 {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3; 
+}
+.__15 {
+    grid-column: 7 / 8;
+    grid-row: 2 / 3; 
+}
+.__16 {
+    grid-column: 8 / 9;
+    grid-row: 2 / 3; 
+}
+.__17 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.__18 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4; 
+}
+.__19 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4; 
+}
+.__20 {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4; 
+}
+.__21 {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4; 
+}
+.__22 {
+    grid-column: 6 / 7;
+    grid-row: 3 / 4; 
+}
+.__23 {
+    grid-column: 7 / 8;
+    grid-row: 3 / 4; 
+}
+.__24 {
+    grid-column: 8 / 9;
+    grid-row: 3 / 4; 
+}
+.__25 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+.__26 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5; 
+}
+.__27 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5; 
+}
+.__28 {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5; 
+}
+.__29 {
+    grid-column: 5 / 6;
+    grid-row: 4 / 5; 
+}
+.__30 {
+    grid-column: 6 / 7;
+    grid-row: 4 / 5; 
+}
+.__31 {
+    grid-column: 7 / 8;
+    grid-row: 4 / 5; 
+}
+.__32 {
+    grid-column: 8 / 9;
+    grid-row: 4 / 5; 
+}
+.__33 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+.__34 {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6; 
+}
+.__35 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6; 
+}
+.__36 {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6; 
+}
+.__37 {
+    grid-column: 5 / 6;
+    grid-row: 5 / 6; 
+}
+.__38 {
+    grid-column: 6 / 7;
+    grid-row: 5 / 6; 
+}
+.__39 {
+    grid-column: 7 / 8;
+    grid-row: 5 / 6; 
+}
+.__40 {
+    grid-column: 8 / 9;
+    grid-row: 5 / 6; 
+}
+
+.dot {
+    background-color: var(--black);
+    border-radius: 50%;
+    height: 0.5em;
+    width: 0.5em;
+    z-index: 50;
 }
 
 .logo-dots {
@@ -374,7 +550,7 @@ body {
     position: absolute;
     font-family: 'Sega';
     font-size: 1.6em;
-    color: #ccc;
+    color: #ffffff80;
     /* background-color: var(--blue); */
     height: 1em;
     margin: 2.3em 0 0 24.7em;
