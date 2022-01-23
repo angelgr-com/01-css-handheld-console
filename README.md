@@ -31,9 +31,11 @@ Use HTML and CSS3 with flexbox layout technique:
   >
   > https://segaretro.org/images/2/20/Gamegear_outline.svg
 
-  
+  ![](https://github.com/angelgr-com/01-css-handheld-console/blob/main/readme/01.jpg?raw=true)
 
 - Then I advanced subdividing every column into more rows. The curves were defined using **border-radius** property and some **rotate()** function when needed.
+
+  ![](https://github.com/angelgr-com/01-css-handheld-console/blob/main/readme/02.jpg?raw=true)
 
   ```css
   body {
@@ -51,7 +53,7 @@ Use HTML and CSS3 with flexbox layout technique:
   }
   ```
 
-- To reduce as much as possible duplicate code, I defined some classes to apply them to various div elements:
+- To reduce as much as possible duplicated code, I defined some classes to apply them to various div elements:
 
   ```css
   .flex {
