@@ -13,7 +13,7 @@
     --orange: rgba(255, 166, 0, 0.5);
     --yellow: rgba(255, 255, 0, 0.5);
     --green: #2fb07290;
-    --blue: #3E95BD90;
+    --blue: #3665BDbd;
     --black: rgba(0, 0, 0, 0.8);
     --gray: rgba(0, 0, 0, 0.6);
     --gray-back1: #94a2ab;
@@ -270,22 +270,41 @@ body {
     transform: rotate(180deg);
 }
 
+.up:hover {
+    margin-top: 0.05em;
+    transition: margin-top 0.2s;
+}
+
 .left {
     position: absolute;
     margin: 2.2em 0em 0em 0em;
     transform: rotate(90deg);
 }
 
+.left:hover {
+    margin: 2.3em 0em 0em -0.05em;
+    transition: margin 0.2s;
+}
+
 .down {
     position: absolute;
     margin: 4.3em 0em 0em 2em;
-    /* transform: rotate(180deg); */
+}
+
+.down:hover {
+    margin-top: 4.4em;
+    transition: margin-top 0.2s;
 }
 
 .right {
     position: absolute;
     margin: 2.2em 0em 0em 4em;
     transform: rotate(-90deg);
+}
+
+.right:hover {
+    margin-left: 4.1em;
+    transition: margin-left 0.2s;
 }
 
 .screen {
@@ -296,11 +315,13 @@ body {
     width: 17.8em;
     z-index: 30;
     border-radius: 5%;
+
     transition: background-color 5s;
 }
 
 .screen:hover {
     background-color: var(--blue);
+    transition: background-color 3s;
 }
 
 .screen-frame {
@@ -553,17 +574,20 @@ body {
 
 .power {
     position: absolute;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(26, 25, 25);
     height: 0.9em;
     margin: 7.8em 0 0 14.7em;
     width: 0.9em;
     z-index: 30;
     border-radius: 50%;
+    transition: background-color 3s;
+
 }
 
-.power-on {
+.power:hover {
     background-color: var(--red);
     box-shadow: 0.1em 0.1em 2em 0.4em var(--red);
+    transition: all 3s;
 }
 
 .power-tag {
@@ -615,6 +639,16 @@ body {
     margin: 8.3em 0 0 49.3em;
 }
 
+.button1:hover {
+    margin-top: 11.45em;
+    transition: margin-top 0.2s;
+}
+
+.button2:hover {
+    margin-top: 8.35em;
+    transition: margin-top 0.2s;
+}
+
 .button1-tag, .button2-tag {
     position: absolute;
     /* background-color: yellow; */
@@ -652,12 +686,16 @@ body {
     transition: box-shadow 0.2s;
 }
 
-.shadow-mini {
+.shadow-med {
     box-shadow: 0.4em 0.4em 0.2em var(--black);
 }
-.shadow-mini:hover {
+.shadow-med:hover {
     box-shadow: 0.2em 0.3em 0.2em var(--black);
     transition: box-shadow 0.2s;
+}
+
+.shadow-min {
+    box-shadow: 0.1em 0.1em 0.4em var(--gray);
 }
 
 /* .shadow-inset {
@@ -670,7 +708,7 @@ body {
 
 .start {
     position: absolute;
-    background-color: var(--start);
+    background-color: var(--blue);
     height: 3em;
     width: 1.7em;
     margin: 3.5em 0 0 46.7em;
@@ -680,9 +718,14 @@ body {
     transform: rotate(18deg);
 }
 
+.start:hover {
+    margin-top: 3.55em;
+    transition: margin-top 0.2s;
+}
+
 .start-dot {
     position: absolute;
-    background-color: var(--start);
+    background-color: var(--blue);
     height: 0.2em;
     margin: 4.7em 0 0 47.5em;
     width: 0.2em;
