@@ -7,6 +7,8 @@
 }
 :root {
     --color-shell: #282619;
+    --buttons: #1E1B0E;
+    --start: #5A5E51;
     --red: rgba(255, 0, 0, 0.5);
     --orange: rgba(255, 166, 0, 0.5);
     --yellow: rgba(255, 255, 0, 0.5);
@@ -31,7 +33,7 @@ body {
 }
 
 .border {
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 .flex {
@@ -52,7 +54,7 @@ body {
 }
 
 .gamegear {
-    position: relative;
+    position: absolute;
     margin-top: 1em;
     margin-left: 2.3em;
     margin-right: 1em;
@@ -206,12 +208,68 @@ body {
 
 .dpad {
     position: absolute;
-    background-color: var(--red);
+    background-color: var(--buttons);
     height: 6.5em;
     margin: 8em 0 0 3em;
     width: 6.5em;
     z-index: 30;
     border-radius: 50%;
+}
+
+.square {
+    background: var(--buttons);
+    height: 2em;
+    width: 2em;
+    margin: 0.2em 0 0 2.1em;
+    position: relative;
+    border-left: 3px solid var(--black);
+    border-right: 3px solid  var(--black);
+}
+
+.triangle {
+    position: relative;
+    left: -0.2em;
+    bottom: 1.1em;
+    height: 0;
+    width: 0;
+    border-left: 1.3em solid transparent;
+    border-right: 1.3em solid transparent;
+    border-bottom: 1.3em solid var(--black);
+}
+.triangle:after{
+    content:'';
+    width: 0; 
+    height: 0; 
+    border-left: 1.1em solid transparent;
+    border-right: 1.1em solid transparent;
+    border-bottom: 1.1em solid var(--buttons);  
+    position: absolute;
+    top: 0.2em;
+    left:-1.1em;
+}
+
+.up {
+    position: absolute;
+    margin: 0.2em 0em 0em 2em;
+    transform: rotate(180deg);
+}
+
+.left {
+    position: absolute;
+    margin: 2.2em 0em 0em 0em;
+    transform: rotate(90deg);
+}
+
+.down {
+    position: absolute;
+    margin: 4.3em 0em 0em 2em;
+    /* transform: rotate(180deg); */
+}
+
+.right {
+    position: absolute;
+    margin: 2.2em 0em 0em 4em;
+    transform: rotate(-90deg);
 }
 
 .screen {
@@ -226,7 +284,7 @@ body {
 
 .screen-frame {
     position: absolute;
-    background-color: var(--green);
+    background-color: var(--color-shell);
     height: 15.3em;
     margin: 2.6em 0 0 17.8em;
     width: 20.2em;
@@ -320,7 +378,7 @@ body {
 
 .button1, .button2 {
     position: absolute;
-    background-color: var(--blue);
+    background-color: var(--buttons);
     height: 3.6em;
     margin: 11.4em 0 0 45.1em;
     width: 3.5em;
@@ -334,7 +392,7 @@ body {
 
 .start {
     position: absolute;
-    background-color: var(--blue);
+    background-color: var(--start);
     height: 3.4em;
     margin: 4.2em 0 0 46.7em;
     width: 1.8em;
@@ -346,10 +404,10 @@ body {
 
 .start-dot {
     position: absolute;
-    background-color: rgba(0, 0, 255, 0.5);
-    height: 0.7em;
-    margin: 5.3em 0 0 47em;
-    width: 0.7em;
+    background-color: var(--start);
+    height: 0.2em;
+    margin: 5.6em 0 0 47.3em;
+    width: 0.2em;
     z-index: 30;
     border-radius: 50%;
 }
